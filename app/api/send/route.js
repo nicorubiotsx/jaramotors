@@ -16,7 +16,6 @@ export async function POST(req) {
       subject: subject,
       react:   EmailTemplate({name:name,email:email,subject:subject,message:message}),
   });
-  console.log(data)
 
 
     return Response.json({data});

@@ -1,13 +1,18 @@
 
 
 import React from "react";
-
+import Image from 'next/image'
 
 export const EmailTemplate = ({name,email,subject,message}) => (
-        <div>
-          <h1>Welcome, {name}!</h1>
-          <h2>{email}</h2>
-          <h3>{subject}</h3>
-          <h4>{message}</h4>
-        </div>
+        <div className="email">
+                
+          <h1 style={{padding:20}} >Nombre: {name}</h1>
+          <h2>Asunto:{subject}</h2>
+          <p>{message}</p>
+          <p>Email:{email}</p>
+        </div> 
+
+
+
+
       );
