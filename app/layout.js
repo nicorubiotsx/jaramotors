@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={non.className}>
+      <body suppressContentEditableWarning={true} className={non.className}>
         <Header/>
       
         

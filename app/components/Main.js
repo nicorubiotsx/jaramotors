@@ -8,6 +8,9 @@ import Link from 'next/link'
 
 export default function Main() {
 
+  
+
+
 
   const [formData,setFormData]=useState({
     email:'',
@@ -37,7 +40,8 @@ export default function Main() {
     try{
       const response = await fetch('api/send',{
         method: 'POST',
-        headers:{'Content-Type':'json/application'},
+      
+
       body: JSON.stringify({
         name:formData.name,
         email:formData.email,
@@ -51,6 +55,7 @@ export default function Main() {
     
       if(response.ok){
         const responseData = await response.json()
+        console.log(responseData)
   
     
 
@@ -61,7 +66,6 @@ export default function Main() {
           message:''
         })
 
-        return responseData
 
       }else{
         console.error('Failed to send email message');
