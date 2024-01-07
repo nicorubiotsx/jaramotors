@@ -8,9 +8,6 @@ import Link from 'next/link'
 
 export default function Main() {
 
-  
-
-
 
   const [formData,setFormData]=useState({
     email:'',
@@ -40,8 +37,7 @@ export default function Main() {
     try{
       const response = await fetch('api/send',{
         method: 'POST',
-      
-
+        headers:{'Content-Type':'json/application'},
       body: JSON.stringify({
         name:formData.name,
         email:formData.email,
@@ -66,7 +62,8 @@ export default function Main() {
           message:''
         })
 
-
+        return responseData
+11
       }else{
         console.error('Failed to send email message');
 
@@ -95,13 +92,12 @@ export default function Main() {
             JARA MOTORS
           </h1>
           <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
-            Bienvenido a tú taller amigo
-            <br />
-           tú auto en las mejores manos.
+          Tú vehiculo queda en las mejores manos.
+  
           </h2>
-          <div className="ml-6 text-center">
+          <div className="btn-link ml-6 text-center">
             <span
-              className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
+              className="inline-flex items-center py-1 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-2 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
               
             >
               <div className="flex text-lg">
@@ -109,7 +105,7 @@ export default function Main() {
               </div>
             </span>
             <Link
-              className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-500 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
+              className="inline-flex items-center py-1 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-blue-500 to-blue-800 px-2  text-md md:mt-0 focus:shadow-outline"
               href="#servicios"
             >
               Comienza Aquí
@@ -139,8 +135,9 @@ export default function Main() {
         <br></br>
 
         <div className="pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3">
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/tren-delantero.jpg'
               width={350}
@@ -153,8 +150,9 @@ export default function Main() {
               Nos especializamos en la reparación integral del tren delantero y trasero, abordando problemas que afectan la estabilidad y la dirección de tu vehículo.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/scanner.png'
               width={350}
@@ -167,8 +165,9 @@ export default function Main() {
               Utilizamos tecnología de vanguardia con nuestro servicio de escaneo automotriz para realizar diagnósticos precisos de los sistemas electrónicos de tu vehículo.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/frenos.jpg'
               width={350}
@@ -182,8 +181,9 @@ export default function Main() {
               nos aseguramos de que tu vehículo tenga un rendimiento de frenado óptimo y seguro.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/alternador.jpeg'
               width={350}
@@ -198,23 +198,41 @@ export default function Main() {
               Confía en nosotros para mantener tu batería cargada y tu vehículo en marcha.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/cambio.jpg'
               width={350}
               height={150}
             />
             <h3 className="pt-3 font-semibold text-lg text-white">
-              Reparación de Cajas De Cambio
+              Reparación de Cajas De Cambio Mecanica
             </h3>
             <p className="pt-2 value-text text-md text-gray-200 fkrr1">
-             Nos especializamos en la reparación experta de cajas de cambios, tanto mecánicas como automáticas,
+             Nos especializamos en la reparación experta de caja  mecanica,
              para mantener tu vehículo en óptimas condiciones de rendimiento y eficiencia.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
+            alt=""
+              src='/automatica.jpg'
+              width={350}
+              height={150}
+            />
+            <h3 className="pt-3 font-semibold text-lg text-white">
+              Reparación de Cajas De Cambio Automatica
+            </h3>
+            <p className="pt-2 value-text text-md text-gray-200 fkrr1">
+             Nos especializamos en la reparación experta de caja  automatica,
+             para mantener tu vehículo en óptimas condiciones de rendimiento y eficiencia.
+            </p>
+          </div>
+          <div className="ktq4 text-center">
+            <Image
+             className="mx-auto"
             alt=""
               src='/motorarranque.jpg'
               width={350}
@@ -228,8 +246,9 @@ export default function Main() {
         
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
+             className="mx-auto"
             alt=""
               src='/lavado.jpg'
               width={350}
@@ -242,9 +261,10 @@ export default function Main() {
             En JARA MOTORS, brindamos un lavado de autos de alta calidad. Desde el exterior hasta el interior, nuestro servicio cuida cada detalle.
             </p>
           </div>
-          <div className="ktq4">
+          <div className="ktq4 text-center">
             <Image
             alt=""
+            className="mx-auto"
               src='/repuestos.jpg'
               width={350}
               height={150}
@@ -253,7 +273,7 @@ export default function Main() {
              Venta e Instalación De Repuestos
             </h3>
             <p className="pt-2 value-text text-md text-gray-200 fkrr1">
-             Te proporcionamos repuestos automotrices de primera calidad y ofrecemos servicios de instalación expertos.
+             Te proporcionamos repuestos automotrices de primera calidad y ofrecemos servicios de instalación.
           
             </p>
           </div>
@@ -266,16 +286,17 @@ export default function Main() {
 
       <section id="nosotros" className="text-gray-600 body-font">
 
-        <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+        <h2 className=" mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
           Acerca De Nostros
         </h2>
         <br></br>
 
 
 
-        <div className="max-w-5xl pt-52 pb-24 mx-auto">
-        <div className="ktq5 ">
+        <div className="max-w-5xl pt-20 pb-24 mx-auto">
+        <div className="ktq5 mx-auto text-center ">
             <Image
+            className="image  mx-auto"
             alt=""
               src='/tren-delantero.jpg'
               width={350}
@@ -308,8 +329,8 @@ export default function Main() {
 
       <section  className="text-gray-600 body-font">
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">Contactanos</h2>
-      <form onSubmit={(handleSubmit)} className="space-y-8">
+      <h2 className=" mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">Contáctanos</h2>
+      <form onSubmit={(handleSubmit)} className="space-y-8 pt-8">
           <div>
               <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Correo" required/>
           </div>
@@ -322,7 +343,7 @@ export default function Main() {
           <div className="sm:col-span-2">
               <textarea id="message" rows="6" name="message" value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tú mensaje"></textarea>
           </div>
-          <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Enviar</button>
+          <button type="submit" className="custom-button-style   mx-auto border-solid border-2 border-#f1f5f9 py-3 px-8 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:inline-block sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Enviar</button>
       </form>
   </div>
 </section>

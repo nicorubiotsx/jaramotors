@@ -98,7 +98,8 @@ a {
 }
 
 .ktq5 {
-  background-color: #101111;
+  background-color: #101111;  
+
 
   padding: 2rem;
   border-radius: 10px;
@@ -106,6 +107,9 @@ a {
  
 }
 
+.image{
+  margin-left: 160px;
+}
 
 
 
@@ -116,4 +120,15 @@ a {
 
 .formulario{
   background: red;
+}
+
+.image {
+  margin-left: 220px; /* Ajusta el valor según lo que necesites */
+}
+
+/* Media query para pantallas más pequeñas (responsive) */
+@media screen and (max-width: 768px) {
+  .image {
+    margin-left: 0; /* Restablecer el margen a 0 en pantallas más pequeñas */
+  }
 }

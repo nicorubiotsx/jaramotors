@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import Image from 'next/image'
+
 
 export const EmailTemplate = ({name,email,subject,message}) => (
         <div className="email">
