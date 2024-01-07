@@ -95,7 +95,7 @@ export default function Main() {
           Tú vehiculo queda en las mejores manos.
   
           </h2>
-          <div className="btn-link ml-6 text-center">
+          <div className="btn-link ml-6 text-center ">
             <span
               className="inline-flex items-center py-1 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-2 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
               
