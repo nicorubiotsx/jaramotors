@@ -296,7 +296,7 @@ export default function Main() {
         <div className="max-w-5xl pt-20 pb-24 mx-auto">
         <div className="ktq5 mx-auto text-center ">
             <Image
-            className="image  mx-auto"
+            className="image  mx-auto text-center"
             alt=""
               src='/tren-delantero.jpg'
               width={350}
