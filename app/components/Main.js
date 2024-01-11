@@ -327,7 +327,7 @@ export default function Main() {
 
       </section>
 
-      <section  className="text-gray-600 body-font">
+      <section id="contacto"  className="text-gray-600 body-font">
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 className=" mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">Contáctanos</h2>
       <form onSubmit={(handleSubmit)} className="space-y-8 pt-8">

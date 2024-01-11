@@ -9,7 +9,7 @@ export default function Footer() {
             <li className="flex items-center ">
               <a
                 href="https://wa.me/56950969197?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center px-8"
               >
                 <Image
                   src={'/whatsapp.png'}
@@ -24,7 +24,7 @@ export default function Footer() {
             <li className="flex items-center">
               <a
                 href="https://wa.me/56930668350?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+                className="px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
               >
                 <Image
                   src={'/whatsapp.png'}
@@ -39,14 +39,14 @@ export default function Footer() {
             <li className="flex items-center">
               <a
                 href="https://wa.me/56950158731?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+                className=" px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
               >
                 <Image
                   src={'/whatsapp.png'}
                   width={30}
                   height={30}
                   alt="WhatsApp Icon"
-                  className="mr-2"
+                  className="mr-2 "
                 />
                 +56950158731
               </a>
@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row mx-auto">
             <a
              
-              className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight pt-4"
+              className=" px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
             >
               © 2023 JARA MOTORS.
             </a>

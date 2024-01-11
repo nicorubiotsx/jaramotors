@@ -146,5 +146,76 @@ a {
     width: fit-content;
   }
 
+  .jara {
+    position: absolute;
+    animation: moverDerecha 6s ease-in-out 4 alternate, escalar 4s ease-in-out 4;
+    top: 50%;
+    left: 0;
+    animation-fill-mode: forwards;
+
+    
+  }
+  
+  @keyframes moverDerecha {
+    0% {
+      left: 0;
+  
+    }
+    100% {
+      left: calc(100% - 50px);
+    
+    }
+  }
+  
+  @keyframes escalar {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  .textjara{
+    padding-top: 30px;
+  }
+
+  
+
 
 }
+
+
+.jara {
+  position: absolute;
+  animation: moverDerecha 6s 2 alternate, escalar 2s ease-in-out 4;
+  animation-timing-function: ease-in-out;
+  top: 50%;
+  left: 0;
+  animation-fill-mode: forwards;
+
+  
+}
+
+@keyframes moverDerecha {
+  0% {
+    left: 0;
+
+  }
+  100% {
+    left: calc(100% - 50px);
+
+   
+    
+  
+  }
+}
+
+@keyframes escalar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+

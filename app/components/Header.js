@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Form from "./form";
 export default function Header() {
+
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [flyer, setFlyer] = useState(false);
   const [flyerTwo, setFlyerTwo] = useState(false);
@@ -16,12 +17,12 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full clearNav z-50">
+    <header className={'fixed top-0 w-full clearNav z-50 '}>
       <div className="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row">
         <div className="flex flex-row items-center justify-between p-3 md:p-1">
           <a
             href="/"
-            className="flex text-3xl text-white font-medium mb-4 md:mb-0"
+            className=" jara  flex text-3xl text-white font-medium mb-4 md:mb-0"
           > <Image
             src={'/jara.png'}
             width={150}
@@ -69,6 +70,9 @@ export default function Header() {
             </Link>
             <Link  href="#nosotros"className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
               Nosotros
+            </Link>
+            <Link  href="#contacto"className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
+              Contacto
             </Link>
           </div>
          
