@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="pb-4 text-gray-200">
       <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
         <div className="flex flex-col justify-between pt-5 pb-4 border-t lg:flex-row bg-top border-black">
-          <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-3 sm:flex-row mx-auto">
+          <ul className="flex flex-row  lg:mb-0  sm:flex-row mx-auto">
             <li className="flex items-center ">
               <a
                 href="https://wa.me/56950969197?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center px-8"
+                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center px-2"
               >
                 <Image
                   src={'/whatsapp.png'}
@@ -24,7 +24,7 @@ export default function Footer() {
             <li className="flex items-center">
               <a
                 href="https://wa.me/56930668350?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className="px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+                className="px-2 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
               >
                 <Image
                   src={'/whatsapp.png'}
@@ -39,7 +39,7 @@ export default function Footer() {
             <li className="flex items-center">
               <a
                 href="https://wa.me/56950158731?text=%20Hola%20quiero%20realizar%20una%20consulta%20" target='blank'
-                className=" px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+                className=" px-2 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
               >
                 <Image
                   src={'/whatsapp.png'}
@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row mx-auto">
             <a
              
-              className=" px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+              className=" jaramotors mt-3 px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
             >
               © 2023 JARA MOTORS.
             </a>

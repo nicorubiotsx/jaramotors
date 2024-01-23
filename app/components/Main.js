@@ -92,7 +92,7 @@ export default function Main() {
             JARA MOTORS
           </h1>
           <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
-          Tú vehiculo queda en las mejores manos.
+          Tú vehiculo está en las mejores manos.
   
           </h2>
           <div className="btn-link ml-6 text-center ">
@@ -118,9 +118,9 @@ export default function Main() {
           <Image
             className="object-cover "
             alt=""
-            src="/taller.jpg"
-            width={850}
-            height={450}
+            src="/portada.jpg"
+            width={800}
+            height={350}
           />
         </div>
      
@@ -250,7 +250,7 @@ export default function Main() {
             <Image
              className="mx-auto"
             alt=""
-              src='/lavado.jpg'
+              src='/lavado.png'
               width={350}
               height={150}
             />
@@ -298,7 +298,7 @@ export default function Main() {
             <Image
             className="image  mx-auto text-center"
             alt=""
-              src='/tren-delantero.jpg'
+              src='/acercade.jpg'
               width={350}
               height={150}
             />

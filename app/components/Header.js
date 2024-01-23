@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex flex-row items-center justify-between p-3 md:p-1">
           <a
             href="/"
-            className=" jara  flex text-3xl text-white font-medium mb-4 md:mb-0"
+            className=" jara mt-10 flex text-3xl text-white font-medium mb-4 md:mb-0"
           > <Image
             src={'/jara.png'}
             width={150}
