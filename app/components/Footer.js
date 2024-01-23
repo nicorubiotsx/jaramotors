@@ -57,7 +57,7 @@ export default function Footer() {
              
               className=" jaramotors mt-3 px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
             >
-              © 2023 JARA MOTORS.
+              © 2024 JARA MOTORS.
             </a>
           </ul>
         </div>
