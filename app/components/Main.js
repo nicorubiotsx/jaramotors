@@ -92,8 +92,7 @@ export default function Main() {
             JARA MOTORS
           </h1>
           <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
-          Tú vehiculo está en las mejores manos.
-  
+              La solución perfecta para tus necesidades automotrices
           </h2>
           <div className="btn-link ml-6 text-center ">
             <span
@@ -101,6 +100,7 @@ export default function Main() {
               
             >
               <div className="flex text-lg">
+                
                 <button onClick={openGoogleMaps} className="justify-center">Ubicación</button>
               </div>
             </span>

@@ -147,7 +147,7 @@ margin: 0 auto;
  }
   .jara {
     position: absolute;
-    animation: moverDerecha 6s linear infinite;
+    animation: moverDerecha 10s linear 1;
     animation-timing-function: ease-in-out;
     top: 50%;
     left: 0;
@@ -196,7 +196,7 @@ textarea{
 
 .jara {
   position: absolute;
-  animation: moverDerecha 6s linear infinite;
+  animation: moverDerecha 10s linear 1;
   animation-timing-function: ease-in-out;
   top: 50%;
   left: 0;
