@@ -142,7 +142,9 @@ a {
 
 @media(max-width:640px){
 
-
+ .jaraheader{
+margin: 0 auto;
+ }
   .jara {
     position: absolute;
     animation: moverDerecha 6s linear infinite;
@@ -167,7 +169,7 @@ a {
   
   
 footer{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 section p{
@@ -214,3 +216,7 @@ textarea{
   }
 }
 
+
+.header-nav{
+  text-align: center;
+}

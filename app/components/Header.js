@@ -60,12 +60,12 @@ export default function Header() {
             (navbarOpen ? " flex" : " hidden")
           }
         >
-          <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <Link  href='#inicio'className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
+          <div className=" jaraheader md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
+            <Link  href='#inicio'className="mr-5 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
               Inicio
             </Link>
         
-            <Link href='#servicios' className="mr-12 md:ml-11 ml-0 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
+            <Link href='#servicios' className="mr-5 md:ml-11 ml-0 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
               Servicios
             </Link>
             <Link  href="#nosotros"className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
