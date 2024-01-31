@@ -287,7 +287,7 @@ export default function Main() {
       <section id="nosotros" className="text-gray-600 body-font">
 
         <h2 className=" mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
-          Acerca De Nostros
+          Acerca De Nosotros
         </h2>
         <br></br>
 
