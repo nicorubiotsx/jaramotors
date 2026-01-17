@@ -38,19 +38,20 @@ export default function Footer() {
             </li>
 
             <li>
-              <a
-
-                className=" jaramotors mt-3 px-8 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
-              >
-                © 2026 JARA MOTORS.
-              </a>
-
+              
             </li>
-
+       
           </ul>
-
+          <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row mx-auto">
+            <a
+             
+              className=" jaramotors mt-3 px-2 text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold flex items-center"
+            >
+              © 2026 JARA MOTORS.
+            </a>
+          </ul>
         </div>
       </div>
     </footer>
   );
-}
+  }
